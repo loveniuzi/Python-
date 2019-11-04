@@ -28,7 +28,7 @@ random.shuffle(lst)
 name1 = lst[0: :3]
 name2 = lst[1: :3]
 name3 = lst[2: :3]
-recards = lst[-1:-4:-1]
+recards = lst[-3: :1]
 
 print("玩家1的牌是:",name1)
 print("玩家2的牌是:",name2)
