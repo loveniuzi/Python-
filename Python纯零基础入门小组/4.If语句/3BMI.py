@@ -6,9 +6,9 @@
 #输入：身高、体重值
 #输出：BMI 指数、是否正常
 
-height = eval(input("请输入你的身高值（以米为单位）:"))
+height = float(input("请输入你的身高值（以米为单位）:"))
 print("你的身高为",height,"米")
-weight = eval(input("请输入你的体重值（以公斤为单位）:"))
+weight = float(input("请输入你的体重值（以公斤为单位）:"))
 print("你的体重为",weight,"公斤")
 
 bmi = weight / (height ** 2)
