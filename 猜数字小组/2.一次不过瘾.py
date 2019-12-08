@@ -7,8 +7,8 @@ secret = random.randint(1, 100)
 playAgain = 'y'
 
 while playAgain == 'y':
-    count = 0
     guess = int(input("请猜一个1到100之间的整数:"))
+    count = 1
     while secret != guess:
         guess = int(input("请猜一个1到100之间的整数:"))
         count = count + 1
