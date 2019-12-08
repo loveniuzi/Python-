@@ -4,16 +4,18 @@
 import random
 
 secret = random.randint(1, 100)
-count = 0
 playAgain = 'y'
 
 while playAgain == 'y':
+    count = 0
     guess = int(input("请猜一个1到100之间的整数:"))
-    count = count + 1
-    if guess > secret:
-        print("你猜的数字大了")
-    elif guess < secret:
-        print("你猜的数字小了")
-    else:
-        print(f"恭喜你！猜对了数字是:{secret},你一共猜了{count}次。")
-        playAgain = input("你是否还要继续游戏?(继续输入y)").lower()
+    while secret != guess:
+        guess = int(input("请猜一个1到100之间的整数:"))
+        count = count + 1
+        if guess > secret:
+            print("你猜的数字大了")
+        elif guess < secret:
+            print("你猜的数字小了")
+        else:
+            print(f"恭喜你！猜对了数字是:{secret},你一共猜了{count}次。")
+            playAgain = input("你是否还要继续游戏?(继续输入y)").lower()
