@@ -3,12 +3,12 @@
 
 import random
 
-secret = random.randint(1, 100)
 playAgain = 'y'
 
 while playAgain == 'y':
-    guess = int(input("请猜一个1到100之间的整数:"))
-    count = 1
+    secret = random.randint(1, 100)
+    guess = 101
+    count = 0
     while secret != guess:
         guess = int(input("请猜一个1到100之间的整数:"))
         count = count + 1
